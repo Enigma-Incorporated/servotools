@@ -1,0 +1,31 @@
+# health.empty
+$ servo health
+
+--- exit ---
+1
+
+--- stdout ---
+Port: /dev/ttyFAKE0
+
+========================================================================
+ID   Joint              Pos  Temp  Mode  Torq  Load  Status
+------------------------------------------------------------------------
+1    shoulder_pan         —     —     —     —     —  MISSING
+2    shoulder_lift        —     —     —     —     —  MISSING
+3    elbow_flex           —     —     —     —     —  MISSING
+4    wrist_flex           —     —     —     —     —  MISSING
+5    wrist_roll           —     —     —     —     —  MISSING
+6    gripper              —     —     —     —     —  MISSING
+------------------------------------------------------------------------
+
+RESULT: Issues detected. See above.
+
+--- ops ---
+1000000 id=1 PING
+1000000 id=2 PING
+1000000 id=3 PING
+1000000 id=4 PING
+1000000 id=5 PING
+1000000 id=6 PING
+
+--- servos ---

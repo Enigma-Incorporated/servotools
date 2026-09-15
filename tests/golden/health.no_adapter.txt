@@ -1,0 +1,12 @@
+# health.no_adapter
+$ servo health
+
+--- exit ---
+1
+
+--- stdout ---
+ERROR: no servo bus adapter found. Is the USB cable connected?
+
+--- ops ---
+
+--- servos ---

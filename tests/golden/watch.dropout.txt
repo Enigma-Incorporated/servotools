@@ -1,0 +1,146 @@
+# watch.dropout
+$ servo watch
+
+--- exit ---
+0
+
+--- stdout ---
+Port: /dev/ttyFAKE0  Watching IDs 1-6
+Ensure torque is off, then move the arm slowly by hand.
+Press Ctrl-C to stop.
+
+Initial: ALL SERVOS CONNECTED
+2024-01-01T00:00:01+00:00  FIRST MISSING: ID5 wrist_roll at 3100
+2024-01-01T00:00:02+00:00  ALL SERVOS CONNECTED
+
+Stopped.
+
+--- ops ---
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+
+--- servos ---
+id=1 pos=2048 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=31 volt=121 eeprom_id=1
+id=2 pos=1500 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=32 volt=121 eeprom_id=2
+id=3 pos=2600 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=33 volt=121 eeprom_id=3
+id=4 pos=900 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=34 volt=121 eeprom_id=4
+id=5 pos=3100 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=35 volt=121 eeprom_id=5
+id=6 pos=2048 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=36 volt=121 eeprom_id=6

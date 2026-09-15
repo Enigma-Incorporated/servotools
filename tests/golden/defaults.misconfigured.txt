@@ -1,0 +1,100 @@
+# defaults.misconfigured
+$ servo defaults
+
+--- exit ---
+0
+
+--- stdout ---
+Port: /dev/ttyFAKE0
+Defaults: Accel=50, P=16, D=32, Mode=0
+
+  Servo 1 (shoulder_pan): OK
+  Servo 2 (shoulder_lift): OK
+  Servo 3 (elbow_flex): OK
+  Servo 4 (wrist_flex): OK
+  Servo 5 (wrist_roll): OK
+  Servo 6 (gripper): OK
+
+All reachable servos configured.
+
+--- ops ---
+1000000 id=1 PING
+1000000 id=1 WRITE addr=40 data=[0]
+1000000 id=1 WRITE addr=55 data=[0]
+1000000 id=1 WRITE addr=37 data=[50]
+1000000 id=1 READ addr=37 len=1
+1000000 id=1 WRITE addr=21 data=[16]
+1000000 id=1 READ addr=21 len=1
+1000000 id=1 WRITE addr=22 data=[32]
+1000000 id=1 READ addr=22 len=1
+1000000 id=1 WRITE addr=33 data=[0]
+1000000 id=1 READ addr=33 len=1
+1000000 id=1 WRITE addr=55 data=[1]
+1000000 id=2 PING
+1000000 id=2 WRITE addr=40 data=[0]
+1000000 id=2 WRITE addr=55 data=[0]
+1000000 id=2 WRITE addr=37 data=[50]
+1000000 id=2 READ addr=37 len=1
+1000000 id=2 WRITE addr=21 data=[16]
+1000000 id=2 READ addr=21 len=1
+1000000 id=2 WRITE addr=22 data=[32]
+1000000 id=2 READ addr=22 len=1
+1000000 id=2 WRITE addr=33 data=[0]
+1000000 id=2 READ addr=33 len=1
+1000000 id=2 WRITE addr=55 data=[1]
+1000000 id=3 PING
+1000000 id=3 WRITE addr=40 data=[0]
+1000000 id=3 WRITE addr=55 data=[0]
+1000000 id=3 WRITE addr=37 data=[50]
+1000000 id=3 READ addr=37 len=1
+1000000 id=3 WRITE addr=21 data=[16]
+1000000 id=3 READ addr=21 len=1
+1000000 id=3 WRITE addr=22 data=[32]
+1000000 id=3 READ addr=22 len=1
+1000000 id=3 WRITE addr=33 data=[0]
+1000000 id=3 READ addr=33 len=1
+1000000 id=3 WRITE addr=55 data=[1]
+1000000 id=4 PING
+1000000 id=4 WRITE addr=40 data=[0]
+1000000 id=4 WRITE addr=55 data=[0]
+1000000 id=4 WRITE addr=37 data=[50]
+1000000 id=4 READ addr=37 len=1
+1000000 id=4 WRITE addr=21 data=[16]
+1000000 id=4 READ addr=21 len=1
+1000000 id=4 WRITE addr=22 data=[32]
+1000000 id=4 READ addr=22 len=1
+1000000 id=4 WRITE addr=33 data=[0]
+1000000 id=4 READ addr=33 len=1
+1000000 id=4 WRITE addr=55 data=[1]
+1000000 id=5 PING
+1000000 id=5 WRITE addr=40 data=[0]
+1000000 id=5 WRITE addr=55 data=[0]
+1000000 id=5 WRITE addr=37 data=[50]
+1000000 id=5 READ addr=37 len=1
+1000000 id=5 WRITE addr=21 data=[16]
+1000000 id=5 READ addr=21 len=1
+1000000 id=5 WRITE addr=22 data=[32]
+1000000 id=5 READ addr=22 len=1
+1000000 id=5 WRITE addr=33 data=[0]
+1000000 id=5 READ addr=33 len=1
+1000000 id=5 WRITE addr=55 data=[1]
+1000000 id=6 PING
+1000000 id=6 WRITE addr=40 data=[0]
+1000000 id=6 WRITE addr=55 data=[0]
+1000000 id=6 WRITE addr=37 data=[50]
+1000000 id=6 READ addr=37 len=1
+1000000 id=6 WRITE addr=21 data=[16]
+1000000 id=6 READ addr=21 len=1
+1000000 id=6 WRITE addr=22 data=[32]
+1000000 id=6 READ addr=22 len=1
+1000000 id=6 WRITE addr=33 data=[0]
+1000000 id=6 READ addr=33 len=1
+1000000 id=6 WRITE addr=55 data=[1]
+
+--- servos ---
+id=1 pos=2048 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=31 volt=121 eeprom_id=1
+id=2 pos=1500 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=32 volt=121 eeprom_id=2
+id=3 pos=2600 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=33 volt=121 eeprom_id=3
+id=4 pos=900 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=34 volt=121 eeprom_id=4
+id=5 pos=3100 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=35 volt=121 eeprom_id=5
+id=6 pos=2048 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=36 volt=121 eeprom_id=6

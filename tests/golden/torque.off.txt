@@ -1,0 +1,25 @@
+# torque.off
+$ servo torque off
+
+--- exit ---
+0
+
+--- stdout ---
+Torque OFF sent to broadcast + IDs 1-6 on /dev/ttyFAKE0
+
+--- ops ---
+1000000 id=254 WRITE addr=40 data=[0]
+1000000 id=1 WRITE addr=40 data=[0]
+1000000 id=2 WRITE addr=40 data=[0]
+1000000 id=3 WRITE addr=40 data=[0]
+1000000 id=4 WRITE addr=40 data=[0]
+1000000 id=5 WRITE addr=40 data=[0]
+1000000 id=6 WRITE addr=40 data=[0]
+
+--- servos ---
+id=1 pos=2048 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=31 volt=121 eeprom_id=1
+id=2 pos=1500 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=32 volt=121 eeprom_id=2
+id=3 pos=2600 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=33 volt=121 eeprom_id=3
+id=4 pos=900 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=34 volt=121 eeprom_id=4
+id=5 pos=3100 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=35 volt=121 eeprom_id=5
+id=6 pos=2048 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=36 volt=121 eeprom_id=6

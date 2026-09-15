@@ -1,0 +1,92 @@
+# health.hot
+$ servo health
+
+--- exit ---
+1
+
+--- stdout ---
+Port: /dev/ttyFAKE0
+
+========================================================================
+ID   Joint              Pos  Temp  Mode  Torq  Load  Status
+------------------------------------------------------------------------
+1    shoulder_pan      2048   31C     0     0    0%  OK
+2    shoulder_lift     1500   32C     0     0    0%  OK
+3    elbow_flex        2600   62C     0     0    0%  CRITICAL TEMP (62C) - DISCONNECT IMMEDIATELY
+4    wrist_flex         900   34C     0     0    0%  OK
+5    wrist_roll        3100   47C     0     0    0%  WARM (47C)
+6    gripper           2048   36C     0     0    0%  OK
+------------------------------------------------------------------------
+Temperature range: 31C - 62C
+
+RESULT: Issues detected. See above.
+
+--- ops ---
+1000000 id=1 PING
+1000000 id=1 READ addr=56 len=2
+1000000 id=1 READ addr=63 len=1
+1000000 id=1 READ addr=33 len=1
+1000000 id=1 READ addr=40 len=1
+1000000 id=1 READ addr=58 len=2
+1000000 id=1 READ addr=62 len=1
+1000000 id=1 READ addr=37 len=1
+1000000 id=1 READ addr=21 len=1
+1000000 id=1 READ addr=22 len=1
+1000000 id=2 PING
+1000000 id=2 READ addr=56 len=2
+1000000 id=2 READ addr=63 len=1
+1000000 id=2 READ addr=33 len=1
+1000000 id=2 READ addr=40 len=1
+1000000 id=2 READ addr=58 len=2
+1000000 id=2 READ addr=62 len=1
+1000000 id=2 READ addr=37 len=1
+1000000 id=2 READ addr=21 len=1
+1000000 id=2 READ addr=22 len=1
+1000000 id=3 PING
+1000000 id=3 READ addr=56 len=2
+1000000 id=3 READ addr=63 len=1
+1000000 id=3 READ addr=33 len=1
+1000000 id=3 READ addr=40 len=1
+1000000 id=3 READ addr=58 len=2
+1000000 id=3 READ addr=62 len=1
+1000000 id=3 READ addr=37 len=1
+1000000 id=3 READ addr=21 len=1
+1000000 id=3 READ addr=22 len=1
+1000000 id=4 PING
+1000000 id=4 READ addr=56 len=2
+1000000 id=4 READ addr=63 len=1
+1000000 id=4 READ addr=33 len=1
+1000000 id=4 READ addr=40 len=1
+1000000 id=4 READ addr=58 len=2
+1000000 id=4 READ addr=62 len=1
+1000000 id=4 READ addr=37 len=1
+1000000 id=4 READ addr=21 len=1
+1000000 id=4 READ addr=22 len=1
+1000000 id=5 PING
+1000000 id=5 READ addr=56 len=2
+1000000 id=5 READ addr=63 len=1
+1000000 id=5 READ addr=33 len=1
+1000000 id=5 READ addr=40 len=1
+1000000 id=5 READ addr=58 len=2
+1000000 id=5 READ addr=62 len=1
+1000000 id=5 READ addr=37 len=1
+1000000 id=5 READ addr=21 len=1
+1000000 id=5 READ addr=22 len=1
+1000000 id=6 PING
+1000000 id=6 READ addr=56 len=2
+1000000 id=6 READ addr=63 len=1
+1000000 id=6 READ addr=33 len=1
+1000000 id=6 READ addr=40 len=1
+1000000 id=6 READ addr=58 len=2
+1000000 id=6 READ addr=62 len=1
+1000000 id=6 READ addr=37 len=1
+1000000 id=6 READ addr=21 len=1
+1000000 id=6 READ addr=22 len=1
+
+--- servos ---
+id=1 pos=2048 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=31 volt=121 eeprom_id=1
+id=2 pos=1500 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=32 volt=121 eeprom_id=2
+id=3 pos=2600 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=62 volt=121 eeprom_id=3
+id=4 pos=900 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=34 volt=121 eeprom_id=4
+id=5 pos=3100 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=47 volt=121 eeprom_id=5
+id=6 pos=2048 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=36 volt=121 eeprom_id=6

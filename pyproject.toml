@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "servotools"
+version = "0.1.0"
+description = "Command-line tools for Feetech STS3215 servos and the SO-101 arm"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Enigma" }]
+keywords = ["feetech", "sts3215", "servo", "so-101", "robotics", "serial"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: System :: Hardware",
+]
+dependencies = ["pyserial>=3.5"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.5"]
+
+[project.scripts]
+servo = "servotools.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Enigma-Incorporated/servotools"
+Issues = "https://github.com/Enigma-Incorporated/servotools/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/servotools"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = ["experiments", "tests/golden", "tests/legacy"]
+
+[tool.ruff]
+line-length = 100
+# Both are frozen pre-refactor / historical code, preserved as run. Not linted.
+extend-exclude = ["experiments", "tests/legacy"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]

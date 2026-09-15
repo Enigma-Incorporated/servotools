@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Run servotools straight from a clone, without installing it.
+# Installed users just run `servo`; see README.md.
+set -euo pipefail
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+if [ -x "$DIR/.venv/bin/python" ]; then
+  PY="$DIR/.venv/bin/python"
+else
+  PY="$(command -v python3 || command -v python || true)"
+fi
+
+if [ -z "$PY" ]; then
+  cat >&2 <<'MSG'
+
+  Python 3 was not found.
+
+    macOS:  brew install python        (or https://www.python.org/downloads/)
+    Linux:  sudo apt install python3   (or your package manager)
+
+MSG
+  exit 1
+fi
+
+if ! "$PY" -c "import serial" 2>/dev/null; then
+  cat >&2 <<MSG
+
+  pyserial is missing. Install servotools with:
+
+    pip install -e "$DIR"
+
+  or run it without installing:  uvx --from "$DIR" servo
+
+MSG
+  exit 1
+fi
+
+exec "$PY" -c "import sys; sys.path.insert(0, '$DIR/src'); from servotools.cli import main; sys.exit(main())" "$@"

@@ -1,0 +1,67 @@
+# setid.fresh
+$ servo set-id 4
+
+--- exit ---
+0
+
+--- stdout ---
+Port: /dev/ttyFAKE0
+Scanning for servo...
+
+Found servo:
+  Current ID:     1 (shoulder_pan)
+  Baud rate:      1000000
+  Position:       2048
+  Temperature:    32C
+  Mode:           0 (position)
+  Torque:         OFF
+  Acceleration:   50
+  PID P/D:        16/32
+
+Will set ID to 4 (wrist_flex) with project defaults.
+
+Servo configured as ID 4 (wrist_flex):
+  Current ID:     4 (wrist_flex)
+  Baud rate:      1000000
+  Position:       2048
+  Temperature:    32C
+  Mode:           0 (position)
+  Torque:         OFF
+  Acceleration:   50
+  PID P/D:        16/32
+
+All writes verified OK.
+
+--- ops ---
+1000000 id=0 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=1 READ addr=63 len=1
+1000000 id=1 READ addr=33 len=1
+1000000 id=1 READ addr=40 len=1
+1000000 id=1 READ addr=37 len=1
+1000000 id=1 READ addr=21 len=1
+1000000 id=1 READ addr=22 len=1
+1000000 id=1 WRITE addr=40 data=[0]
+1000000 id=1 WRITE addr=55 data=[0]
+1000000 id=1 WRITE addr=5 data=[4]
+1000000 id=4 WRITE addr=37 data=[50]
+1000000 id=4 READ addr=37 len=1
+1000000 id=4 WRITE addr=21 data=[16]
+1000000 id=4 READ addr=21 len=1
+1000000 id=4 WRITE addr=22 data=[32]
+1000000 id=4 READ addr=22 len=1
+1000000 id=4 WRITE addr=33 data=[0]
+1000000 id=4 READ addr=33 len=1
+1000000 id=4 WRITE addr=55 data=[1]
+1000000 id=4 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=4 READ addr=63 len=1
+1000000 id=4 READ addr=33 len=1
+1000000 id=4 READ addr=40 len=1
+1000000 id=4 READ addr=37 len=1
+1000000 id=4 READ addr=21 len=1
+1000000 id=4 READ addr=22 len=1
+
+--- servos ---
+id=4 pos=2048 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=32 volt=121 eeprom_id=4

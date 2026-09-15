@@ -1,0 +1,248 @@
+# scan.quick
+$ servo scan --quick
+
+--- exit ---
+0
+
+--- stdout ---
+Port: /dev/ttyFAKE0
+
+Listening for unsolicited bus activity (1s)...
+  Bus is quiet.
+
+Scanning baud=1000000, IDs 0-10...
+  ID 1 (shoulder_pan): pos=2048 FOUND
+  ID 2 (shoulder_lift): pos=1500 FOUND
+  ID 3 (elbow_flex): pos=2600 FOUND
+  ID 4 (wrist_flex): pos=900 FOUND
+  ID 5 (wrist_roll): pos=3100 FOUND
+  ID 6 (gripper): pos=2048 FOUND
+
+==================================================
+Found 6 servo(s). Detailed info:
+==================================================
+
+  Servo ID 1 (shoulder_pan) @ baud 1000000:
+      Present_Position     (addr 56): 2048
+      Temperature          (addr 63): 31
+      Mode                 (addr 33): 0
+      Torque_Enable        (addr 40): 0
+      Acceleration         (addr 37): 50
+      P_Coefficient        (addr 21): 16
+      D_Coefficient        (addr 22): 32
+      I_Coefficient        (addr 23): 0
+      Voltage              (addr 62): 121
+      Present_Load         (addr 58): 0
+      Present_Speed        (addr 56): 2048
+      Max_Torque           (addr 16): 1000
+      Torque_Limit         (addr 48): 1000
+      ID                   (addr  5): 1
+      Baud_Rate_Reg        (addr  4): 3
+      Response_Level       (addr  8): 1
+
+  Servo ID 2 (shoulder_lift) @ baud 1000000:
+      Present_Position     (addr 56): 1500
+      Temperature          (addr 63): 32
+      Mode                 (addr 33): 0
+      Torque_Enable        (addr 40): 0
+      Acceleration         (addr 37): 50
+      P_Coefficient        (addr 21): 16
+      D_Coefficient        (addr 22): 32
+      I_Coefficient        (addr 23): 0
+      Voltage              (addr 62): 121
+      Present_Load         (addr 58): 0
+      Present_Speed        (addr 56): 1500
+      Max_Torque           (addr 16): 1000
+      Torque_Limit         (addr 48): 1000
+      ID                   (addr  5): 2
+      Baud_Rate_Reg        (addr  4): 3
+      Response_Level       (addr  8): 1
+
+  Servo ID 3 (elbow_flex) @ baud 1000000:
+      Present_Position     (addr 56): 2600
+      Temperature          (addr 63): 33
+      Mode                 (addr 33): 0
+      Torque_Enable        (addr 40): 0
+      Acceleration         (addr 37): 50
+      P_Coefficient        (addr 21): 16
+      D_Coefficient        (addr 22): 32
+      I_Coefficient        (addr 23): 0
+      Voltage              (addr 62): 121
+      Present_Load         (addr 58): 0
+      Present_Speed        (addr 56): 2600
+      Max_Torque           (addr 16): 1000
+      Torque_Limit         (addr 48): 1000
+      ID                   (addr  5): 3
+      Baud_Rate_Reg        (addr  4): 3
+      Response_Level       (addr  8): 1
+
+  Servo ID 4 (wrist_flex) @ baud 1000000:
+      Present_Position     (addr 56): 900
+      Temperature          (addr 63): 34
+      Mode                 (addr 33): 0
+      Torque_Enable        (addr 40): 0
+      Acceleration         (addr 37): 50
+      P_Coefficient        (addr 21): 16
+      D_Coefficient        (addr 22): 32
+      I_Coefficient        (addr 23): 0
+      Voltage              (addr 62): 121
+      Present_Load         (addr 58): 0
+      Present_Speed        (addr 56): 900
+      Max_Torque           (addr 16): 1000
+      Torque_Limit         (addr 48): 1000
+      ID                   (addr  5): 4
+      Baud_Rate_Reg        (addr  4): 3
+      Response_Level       (addr  8): 1
+
+  Servo ID 5 (wrist_roll) @ baud 1000000:
+      Present_Position     (addr 56): 3100
+      Temperature          (addr 63): 35
+      Mode                 (addr 33): 0
+      Torque_Enable        (addr 40): 0
+      Acceleration         (addr 37): 50
+      P_Coefficient        (addr 21): 16
+      D_Coefficient        (addr 22): 32
+      I_Coefficient        (addr 23): 0
+      Voltage              (addr 62): 121
+      Present_Load         (addr 58): 0
+      Present_Speed        (addr 56): 3100
+      Max_Torque           (addr 16): 1000
+      Torque_Limit         (addr 48): 1000
+      ID                   (addr  5): 5
+      Baud_Rate_Reg        (addr  4): 3
+      Response_Level       (addr  8): 1
+
+  Servo ID 6 (gripper) @ baud 1000000:
+      Present_Position     (addr 56): 2048
+      Temperature          (addr 63): 36
+      Mode                 (addr 33): 0
+      Torque_Enable        (addr 40): 0
+      Acceleration         (addr 37): 50
+      P_Coefficient        (addr 21): 16
+      D_Coefficient        (addr 22): 32
+      I_Coefficient        (addr 23): 0
+      Voltage              (addr 62): 121
+      Present_Load         (addr 58): 0
+      Present_Speed        (addr 56): 2048
+      Max_Torque           (addr 16): 1000
+      Torque_Limit         (addr 48): 1000
+      ID                   (addr  5): 6
+      Baud_Rate_Reg        (addr  4): 3
+      Response_Level       (addr  8): 1
+
+--- ops ---
+1000000 id=0 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=7 READ addr=56 len=2
+1000000 id=8 READ addr=56 len=2
+1000000 id=9 READ addr=56 len=2
+1000000 id=10 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=1 READ addr=63 len=1
+1000000 id=1 READ addr=33 len=1
+1000000 id=1 READ addr=40 len=1
+1000000 id=1 READ addr=37 len=1
+1000000 id=1 READ addr=21 len=1
+1000000 id=1 READ addr=22 len=1
+1000000 id=1 READ addr=23 len=1
+1000000 id=1 READ addr=62 len=1
+1000000 id=1 READ addr=58 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=1 READ addr=16 len=2
+1000000 id=1 READ addr=48 len=2
+1000000 id=1 READ addr=5 len=1
+1000000 id=1 READ addr=4 len=1
+1000000 id=1 READ addr=8 len=1
+1000000 id=2 READ addr=56 len=2
+1000000 id=2 READ addr=63 len=1
+1000000 id=2 READ addr=33 len=1
+1000000 id=2 READ addr=40 len=1
+1000000 id=2 READ addr=37 len=1
+1000000 id=2 READ addr=21 len=1
+1000000 id=2 READ addr=22 len=1
+1000000 id=2 READ addr=23 len=1
+1000000 id=2 READ addr=62 len=1
+1000000 id=2 READ addr=58 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=2 READ addr=16 len=2
+1000000 id=2 READ addr=48 len=2
+1000000 id=2 READ addr=5 len=1
+1000000 id=2 READ addr=4 len=1
+1000000 id=2 READ addr=8 len=1
+1000000 id=3 READ addr=56 len=2
+1000000 id=3 READ addr=63 len=1
+1000000 id=3 READ addr=33 len=1
+1000000 id=3 READ addr=40 len=1
+1000000 id=3 READ addr=37 len=1
+1000000 id=3 READ addr=21 len=1
+1000000 id=3 READ addr=22 len=1
+1000000 id=3 READ addr=23 len=1
+1000000 id=3 READ addr=62 len=1
+1000000 id=3 READ addr=58 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=3 READ addr=16 len=2
+1000000 id=3 READ addr=48 len=2
+1000000 id=3 READ addr=5 len=1
+1000000 id=3 READ addr=4 len=1
+1000000 id=3 READ addr=8 len=1
+1000000 id=4 READ addr=56 len=2
+1000000 id=4 READ addr=63 len=1
+1000000 id=4 READ addr=33 len=1
+1000000 id=4 READ addr=40 len=1
+1000000 id=4 READ addr=37 len=1
+1000000 id=4 READ addr=21 len=1
+1000000 id=4 READ addr=22 len=1
+1000000 id=4 READ addr=23 len=1
+1000000 id=4 READ addr=62 len=1
+1000000 id=4 READ addr=58 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=4 READ addr=16 len=2
+1000000 id=4 READ addr=48 len=2
+1000000 id=4 READ addr=5 len=1
+1000000 id=4 READ addr=4 len=1
+1000000 id=4 READ addr=8 len=1
+1000000 id=5 READ addr=56 len=2
+1000000 id=5 READ addr=63 len=1
+1000000 id=5 READ addr=33 len=1
+1000000 id=5 READ addr=40 len=1
+1000000 id=5 READ addr=37 len=1
+1000000 id=5 READ addr=21 len=1
+1000000 id=5 READ addr=22 len=1
+1000000 id=5 READ addr=23 len=1
+1000000 id=5 READ addr=62 len=1
+1000000 id=5 READ addr=58 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=5 READ addr=16 len=2
+1000000 id=5 READ addr=48 len=2
+1000000 id=5 READ addr=5 len=1
+1000000 id=5 READ addr=4 len=1
+1000000 id=5 READ addr=8 len=1
+1000000 id=6 READ addr=56 len=2
+1000000 id=6 READ addr=63 len=1
+1000000 id=6 READ addr=33 len=1
+1000000 id=6 READ addr=40 len=1
+1000000 id=6 READ addr=37 len=1
+1000000 id=6 READ addr=21 len=1
+1000000 id=6 READ addr=22 len=1
+1000000 id=6 READ addr=23 len=1
+1000000 id=6 READ addr=62 len=1
+1000000 id=6 READ addr=58 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=6 READ addr=16 len=2
+1000000 id=6 READ addr=48 len=2
+1000000 id=6 READ addr=5 len=1
+1000000 id=6 READ addr=4 len=1
+1000000 id=6 READ addr=8 len=1
+
+--- servos ---
+id=1 pos=2048 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=31 volt=121 eeprom_id=1
+id=2 pos=1500 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=32 volt=121 eeprom_id=2
+id=3 pos=2600 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=33 volt=121 eeprom_id=3
+id=4 pos=900 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=34 volt=121 eeprom_id=4
+id=5 pos=3100 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=35 volt=121 eeprom_id=5
+id=6 pos=2048 torque=0 mode=0 accel=50 p=16 d=32 lock=1 temp=36 volt=121 eeprom_id=6

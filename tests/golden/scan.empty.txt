@@ -1,0 +1,31 @@
+# scan.empty
+$ servo scan --quick
+
+--- exit ---
+1
+
+--- stdout ---
+Port: /dev/ttyFAKE0
+
+Listening for unsolicited bus activity (1s)...
+  Bus is quiet.
+
+Scanning baud=1000000, IDs 0-10...
+
+No servos found.
+Check: 12V power on? Cable connected? Jumper in USB position?
+
+--- ops ---
+1000000 id=0 READ addr=56 len=2
+1000000 id=1 READ addr=56 len=2
+1000000 id=2 READ addr=56 len=2
+1000000 id=3 READ addr=56 len=2
+1000000 id=4 READ addr=56 len=2
+1000000 id=5 READ addr=56 len=2
+1000000 id=6 READ addr=56 len=2
+1000000 id=7 READ addr=56 len=2
+1000000 id=8 READ addr=56 len=2
+1000000 id=9 READ addr=56 len=2
+1000000 id=10 READ addr=56 len=2
+
+--- servos ---
